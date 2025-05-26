@@ -1,6 +1,30 @@
 @import "tailwindcss";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .glass-effect {
+    @apply bg-white/70 backdrop-blur-md border border-white/20;
+  }
+  
+  .glass-card {
+    @apply bg-white/60 backdrop-blur-md border border-white/20 shadow-xl hover:shadow-2xl transition-all duration-300;
+  }
+
+  .glass-gradient {
+    @apply bg-gradient-to-r from-blue-600/80 via-cyan-600/80 to-teal-600/80 backdrop-blur-md;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-teal-600;
+  }
+}
+
 :root {
+  --primary-gradient: linear-gradient(135deg, #2563eb 0%, #0d9488 100%);
+  --glass-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
   --background: #ffffff;
   --foreground: #171717;
 }
