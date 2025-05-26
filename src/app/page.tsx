@@ -82,20 +82,7 @@ const testimonials = [
   }
 ];
 
-const recognitions = [
-  {
-    name: "Top IT Staffing Agency 2025",
-    logo: "/awards/award1.svg"
-  },
-  {
-    name: "Best Workplace Culture 2024",
-    logo: "/awards/award2.svg"
-  },
-  {
-    name: "Excellence in IT Recruitment",
-    logo: "/awards/award3.svg"
-  }
-];
+// Removed unused recognitions array
 
 export default function Home() {
   return (

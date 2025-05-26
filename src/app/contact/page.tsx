@@ -1,7 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 import Link from 'next/link';
 
 export default function ContactPage() {
