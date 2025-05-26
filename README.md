@@ -1,8 +1,19 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SparkLink Systems
+
+SparkLink Systems is a professional IT staffing company website built with Next.js, featuring modern UI design, animations with Framer Motion, and responsive layouts with Tailwind CSS.
+
+## Features
+
+- Modern, responsive design with glassmorphism effects
+- Interactive UI components with smooth animations
+- Technology expertise showcase
+- Client testimonials
+- Trust indicators and statistics
+- Mobile-friendly layout
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies and run the development server:
 
 ```bash
 npm run dev
