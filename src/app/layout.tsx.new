@@ -1,0 +1,27 @@
+// This is an RSC (React Server Component)
+import { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import dynamic from 'next/dynamic'
+import './globals.css'
+
+const inter = Inter({ subsets: ['latin'] })
+
+// Import metadata from the separate file
+export { metadata } from './layout.metadata'
+
+// Import the client-side layout component without SSR
+const ClientLayout = dynamic(() => import('./ClientLayout'), { ssr: false })
+
+type Props = {
+  children: React.ReactNode
+}
+
+export default function RootLayout({ children }: Props): JSX.Element {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className} suppressHydrationWarning>
+        <ClientLayout>{children}</ClientLayout>
+      </body>
+    </html>
+  )
+}

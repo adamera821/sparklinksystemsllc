@@ -1,8 +1,19 @@
-import { Metadata } from 'next';
+import { Metadata, Viewport } from 'next';
 
 const defaultMetadata: Metadata = {
+  metadataBase: new URL('https://sparklinksystemsllc-rijdu5kc1-adamera821s-projects.vercel.app'),
   title: 'SparkLink Systems - IT Staffing Solutions',
   description: 'Leading IT staffing agency connecting top tech talent with innovative companies. Specializing in permanent placement, contract-to-hire, and project-based staffing.',
+  manifest: '/manifest.json',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '48x48' },
+      { url: '/favicon.svg', sizes: '32x32 48x48 72x72 96x96 128x128 256x256', type: 'image/svg+xml' }
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }
+    ],
+  },
   keywords: [
     'IT staffing',
     'tech recruitment',
@@ -15,6 +26,33 @@ const defaultMetadata: Metadata = {
     'IT recruitment agency',
     'tech hiring',
   ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    title: 'SparkLink Systems - IT Staffing Solutions',
+    description: 'Leading IT staffing agency connecting top tech talent with innovative companies.',
+    url: 'https://sparklinksystemsllc-rijdu5kc1-adamera821s-projects.vercel.app',
+    siteName: 'SparkLink Systems',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'SparkLink Systems - IT Staffing Solutions',
+    description: 'Leading IT staffing agency connecting top tech talent with innovative companies.',
+  },
+  verification: {
+    google: 'verify-code', // You'll need to replace this with your actual Google Search Console verification code
+  },
 };
 
 export const metadata: { [key: string]: Metadata } = {

@@ -326,12 +326,12 @@ export default function Home() {
             transition={{ delay: 0.2 }}
             className="mx-auto mt-16 grid max-w-7xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4"
           >
-            {techExpertise.map((category, index) => (
+            {techExpertise.map((category) => (
               <motion.div
-                key={index}
+                key={category.category}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
+                transition={{ duration: 0.5 }}
                 className="flex flex-col bg-white/5 backdrop-blur-xl rounded-2xl p-8 border border-white/10 hover:border-blue-500/30 transition-all duration-300"
               >
                 <h3 className="text-xl font-semibold text-blue-400 mb-4">{category.category}</h3>

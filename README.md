@@ -4,32 +4,85 @@ SparkLink Systems is a professional IT staffing company website built with Next.
 
 ## Features
 
-- Modern, responsive design with glassmorphism effects
-- Interactive UI components with smooth animations
-- Technology expertise showcase
-- Client testimonials
-- Trust indicators and statistics
-- Mobile-friendly layout
+### Modern Design & Animations
+- Sleek, responsive design with glassmorphism effects
+- Interactive UI components with Framer Motion animations
+- Dynamic gradient backgrounds with blur effects
+- Smooth page transitions and micro-interactions
+- Professional color scheme with blue and cyan accents
+
+### Enhanced Navigation
+- Animated navigation bar with active page indicators
+- Interactive logo with glow effects and hover animations
+- Smooth mobile menu transitions with backdrop blur
+- Intelligent scroll-to-top functionality
+
+### Trust & Credibility Indicators
+- Official EIN display (33-3495597)
+- Professional trust badges and certifications
+- Dynamic copyright information
+- "Trusted IT Staffing Solutions" branding
+- Company verification indicators
+
+### Responsive Features
+- Optimized for all device sizes
+- Mobile-first approach
+- Touch-friendly interactions
+- Adaptive layouts for different screen sizes
+- Performant animations on mobile devices
+
+### Technical Highlights
+- Built with Next.js 14 and TypeScript
+- Tailwind CSS for styling
+- Framer Motion for animations
+- SEO-optimized structure
+- Accessibility compliance
 
 ## Getting Started
 
-First, install the dependencies and run the development server:
+### Prerequisites
 
+- Node.js 18.x or later
+- npm or yarn package manager
+- Git for version control
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone [repository-url]
+cd sparklinksystemsllc
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Set up environment variables:
+```bash
+cp .env.example .env.local
+```
+
+4. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Key Files
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/components/Navbar.tsx` - Interactive navigation component with animations
+- `src/components/Footer.tsx` - Footer with trust indicators and company information
+- `src/app/page.tsx` - Main landing page
+- `tailwind.config.js` - Theme customization and styling configuration
+
+The project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), providing optimal typography.
 
 ## Learn More
 

@@ -4,7 +4,7 @@ import { useForm } from '@formspree/react';
 import Link from 'next/link';
 
 export default function ContactPage() {
-	const [state, handleSubmit] = useForm("YOUR_FORMSPREE_ID"); // Replace with your Formspree form ID
+	const [state] = useForm("YOUR_FORMSPREE_ID"); // Replace with your Formspree form ID
 
 	if (state.succeeded) {
 		return (
@@ -78,7 +78,7 @@ export default function ContactPage() {
 										<dt className="text-base font-semibold bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent">Email</dt>
 										<dd className="mt-2">
 											<a href="mailto:info@sparklinksystems.com" className="text-blue-400 hover:text-cyan-400 transition-colors duration-300">
-												info@sparklinksystems.com
+												info@sparklinksystemsllc.com
 											</a>
 										</dd>
 									</div>
@@ -86,7 +86,7 @@ export default function ContactPage() {
 										<dt className="text-base font-semibold bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent">Phone</dt>
 										<dd className="mt-2">
 											<a href="tel:+1-555-123-4567" className="text-blue-400 hover:text-cyan-400 transition-colors duration-300">
-												732-773-6992
+												+1 732-773-6992
 											</a>
 										</dd>
 									</div>

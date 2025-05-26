@@ -125,6 +125,44 @@ export default function Footer() {
             </div>
           </div>
         </div>
+        <div className="mt-8 border-t border-white/10 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="flex flex-col text-sm text-gray-400 space-y-2">
+              <p>© {new Date().getFullYear()} SparkLink Systems LLC. All rights reserved.</p>
+              <p className="flex items-center gap-2">
+                <span className="text-blue-400/80">EIN:</span>
+                <span>33-3495597</span>
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-400/60"></span>
+                <span>Your Trusted IT Staffing Partner</span>
+              </p>
+            </div>
+            <div className="text-sm">
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="flex flex-col items-center md:items-end space-y-1 text-gray-400"
+              >
+                <div className="flex items-center gap-2">
+                  <motion.span
+                    animate={{ 
+                      boxShadow: ['0 0 0 0 rgba(96,165,250,0)', '0 0 8px 2px rgba(96,165,250,0.2)', '0 0 0 0 rgba(96,165,250,0)']
+                    }}
+                    transition={{ 
+                      duration: 2,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
+                    className="px-2 py-1 rounded-full bg-blue-500/10 text-blue-300"
+                  >
+                    Trusted IT Staffing Solutions
+                  </motion.span>
+                </div>
+                <span className="text-gray-500">Excellence in Technology Recruitment</span>
+              </motion.div>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   );
